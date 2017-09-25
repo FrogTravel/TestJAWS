@@ -13,7 +13,7 @@ Before using normalize method you need to setup your project
 4. Add this jar to your project
 
 You can check if the library was connected properly by using this code (from [manual](https://www.programcreek.com/2012/07/convert-verbs-to-base-form-by-using-wordnet-in-java/))
-```jave
+```java
 public static void main(String[] args) {
  
 		System.setProperty("wordnet.database.dir", "/home/.../wordnet/dict/");
