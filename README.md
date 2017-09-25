@@ -2,7 +2,7 @@
 
 ### Description
 
-Example of usage JAWS with dictionary of verbs, to transform them to basic form.
+Example of usage [JAWS](https://github.com/jaytaylor/jaws) with dictionary of verbs from [WordNet](http://wordnet.princeton.edu/), to transform them to basic form.
 Before using normalize method you need to setup your project
 
 ### Setup
