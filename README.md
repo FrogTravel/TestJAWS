@@ -12,6 +12,24 @@ Before using normalize method you need to setup your project
 3. Download JAWS jar file from [java2s](http://www.java2s.com/Code/Jar/j/Downloadjawsbinjar.htm)
 4. Add this jar to your project
 
+You can check if the library was connected properly by using this code (from [manual](https://www.programcreek.com/2012/07/convert-verbs-to-base-form-by-using-wordnet-in-java/))
+```jave
+public static void main(String[] args) {
+ 
+		System.setProperty("wordnet.database.dir", "/home/.../wordnet/dict/");
+		WordNetDatabase database = WordNetDatabase.getFileInstance();
+ 
+		Morphology id = Morphology.getInstance();
+ 
+		String[] arr = id.getBaseFormCandidates("implements", SynsetType.VERB);
+ 
+		System.out.println(arr.length);
+ 
+		for(String a: arr)
+			System.out.println(a);
+	}
+```
+
 ### How to normalize
 
 To normalize all words in text you need to pass `ArrayList` with those words to `normalize` method. 
